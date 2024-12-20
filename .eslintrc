@@ -4,20 +4,17 @@
 	"extends": "@ljharb",
 
 	"rules": {
-		"complexity": 0,
-		"id-length": 0,
-		"new-cap": ["error", {
-			"capIsNewExceptions": [
-				"GetIntrinsic",
-			],
-		}],
+		"func-name-matching": 0,
+		"indent": [2, 4],
+		"no-new-func": [1],
 	},
 
 	"overrides": [
 		{
 			"files": "test/**",
 			"rules": {
-				"max-lines-per-function": "off",
+				"max-lines-per-function": 0,
+				"strict": [0]
 			},
 		},
 	],
